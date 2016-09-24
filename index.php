@@ -19,7 +19,7 @@ $savestring=$category."|".$unit."|".$regno."|".$name."|".$sex."|".$nationality."
 fwrite($fp,$savestring);
 fclose($fp);
 //echo "Thank you $name, your details was succesifuly submited";
-$cmd= "mx seq=usersformdata.txt proc=@users_cv.prc append=\ABCD\www\bases\selfregistration\data\selfregistration fst=@\ABCD\www\bases\selfregistration\data\selfregistration.fst fullinv=selfregistration count=1 now -all";
+$cmd= "mx seq=usersformdata.txt proc=@users_cv.prc append=/var/opt/ABCD/www/bases/selfregistration/data/selfregistration fst=@/var/opt/ABCD/www/bases/selfregistration/data/selfregistration.fst fullinv=selfregistration count=1 now -all";
 //echo "command=" . $cmd . "<br>";
 $res=exec($cmd,$resultstring,$rescode);
 //echo "return code =" . $rescode;
