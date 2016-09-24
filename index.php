@@ -18,7 +18,8 @@ $fp=fopen("usersformdata.txt","w");
 $savestring=$category."|".$unit."|".$regno."|".$name."|".$sex."|".$nationality."|".$adess."|".$region."|".$country."|".$phone."|".$email."|".$username."|".$password1."\r\n";
 fwrite($fp,$savestring);
 fclose($fp);
-//echo "Thank you $name, your details was succesifuly submited";
+echo "Thank you $name, your details was succesifuly submited";
+//send the docs to the database
 $cmd= "mx seq=usersformdata.txt proc=@users_cv.prc append=/var/opt/ABCD/www/bases/selfregistration/data/selfregistration fst=@/var/opt/ABCD/www/bases/selfregistration/data/selfregistration.fst fullinv=selfregistration count=1 now -all";
 //echo "command=" . $cmd . "<br>";
 $res=exec($cmd,$resultstring,$rescode);
@@ -28,9 +29,6 @@ $res=exec($cmd,$resultstring,$rescode);
 
 }
 ?>
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
