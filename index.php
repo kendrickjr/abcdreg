@@ -90,7 +90,7 @@ body {
 <option value="SOPAM">SOPAM</option>
 <option value="SOB">SOB</option>
 <option value="FST">FST</option>
-<option value="DICT">DICT</option>
+<option value="DICT">IDS</option>
 <option value="DELCE">DELCE</option>
 <option value="FSS">FSS</option>
 <option value="DQA">DQA</option>
@@ -104,14 +104,14 @@ body {
   <tr>
       <td width="33%">RegNo</td>
       <td width="67%"><label>
-        <input type="text" name="number" required placeholder="e.g 1234/T.13"/>
+        <input type="text" name="number" required placeholder="e.g 111234/T.13"/>
       </label></td>
     </tr>
   
   <tr>
       <td width="33%">Name</td>
       <td width="67%"><label>
-        <input type="text" name="name" required placeholder="e.g Deogratus Daniel"/>
+        <input type="text" name="name" required placeholder="e.g Msimbe Mkude"/>
       </label></td>
     </tr>
     
