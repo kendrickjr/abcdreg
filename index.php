@@ -469,7 +469,7 @@ body {
       <td>Password</td>
       <td><label><span id="sprypassword1">
         <input type="password" name="password1" id="password1" required placeholder="password"/>
-        <span class="passwordRequiredMsg">A value is required.</span></span><br />
+        <span class="passwordRequiredMsg">this value is required.</span></span><br/>
       </label></td>
     </tr>
     
